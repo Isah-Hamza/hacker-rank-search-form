@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="11" failures="11" errors="0" time="2.636">
+  <testsuite name="Favorite Movie Directory" errors="0" failures="11" skipped="0" timestamp="2023-07-06T05:43:08" time="1.907" tests="11">
+    <testcase classname="Favorite Movie Directory should not initially show the no result message or list" name="Favorite Movie Directory should not initially show the no result message or list" time="0.063">
+      <failure>Error: expect(received).toBeNull()
+
+Received: &lt;ul class=&quot;styled w-100 pl-0&quot; data-testid=&quot;moviesList&quot;&gt;&lt;li class=&quot;flex slide-up-fade-in justify-content-between&quot;&gt;&lt;div class=&quot;layout-column w-40&quot;&gt;&lt;h3 class=&quot;my-3&quot; /&gt;&lt;p class=&quot;my-0&quot; /&gt;&lt;/div&gt;&lt;div class=&quot;layout-row my-auto mr-20&quot;&gt;&lt;p class=&quot;justify-content-end&quot; /&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:67:23)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Favorite Movie Directory should add a row with valid data and not show the no result message" name="Favorite Movie Directory should add a row with valid data and not show the no result message" time="0.024">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;Star WarsRatings: 95/1003 Hrs&quot;
+Received: &quot;&quot;
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:74:42)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Favorite Movie Directory should not add the row if name or ratings or duration is empty" name="Favorite Movie Directory should not add the row if name or ratings or duration is empty" time="0.024">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;The PlatformRatings: 40/1001.5 Hrs&quot;
+Received: &quot;&quot;
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:81:42)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Favorite Movie Directory should add duration in hours if entered in minutes" name="Favorite Movie Directory should add duration in hours if entered in minutes" time="0.016">
+      <failure>Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: &quot;2.8 Hrs&quot;
+Received string:    &quot;&quot;
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:91:42)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Favorite Movie Directory should not add the row if data invalid" name="Favorite Movie Directory should not add the row if data invalid" time="0.012">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;AntmanRatings: 99/1002 Hrs&quot;
+Received: &quot;&quot;
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:97:42)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Favorite Movie Directory should show alert message if duration data invalid" name="Favorite Movie Directory should show alert message if duration data invalid" time="0.025">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;alert&quot;]
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;h8k-navbar
+        header=&quot;Favorite Movie Directory&quot;
+      /&gt;
+      &lt;div
+        class=&quot;layout-row justify-content-center mt-100&quot;
+      &gt;
+        &lt;div
+          class=&quot;w-30 mr-75&quot;
+        &gt;
+          &lt;section&gt;
+            &lt;div
+              class=&quot;card pa-30&quot;
+            &gt;
+              &lt;form&gt;
+                &lt;div
+                  class=&quot;layout-column mb-15&quot;
+                &gt;
+                  &lt;label
+                    class=&quot;mb-3&quot;
+                    for=&quot;name&quot;
+                  &gt;
+                    Movie Name
+                  &lt;/label&gt;
+                  &lt;input
+                    data-testid=&quot;nameInput&quot;
+                    id=&quot;name&quot;
+                    placeholder=&quot;Enter Movie Name&quot;
+                    type=&quot;text&quot;
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div
+                  class=&quot;layout-column mb-15&quot;
+                &gt;
+                  &lt;label
+                    class=&quot;mb-3&quot;
+                    for=&quot;ratings&quot;
+                  &gt;
+                    Ratings
+                  &lt;/label&gt;
+                  &lt;input
+                    data-testid=&quot;ratingsInput&quot;
+                    id=&quot;ratings&quot;
+                    placeholder=&quot;Enter Rating on a scale of 1 to 100&quot;
+                    type=&quot;number&quot;
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div
+                  class=&quot;layout-column mb-30&quot;
+                &gt;
+                  &lt;label
+                    class=&quot;mb-3&quot;
+                    for=&quot;duration&quot;
+                  &gt;
+                    Duration
+                  &lt;/label&gt;
+                  &lt;input
+                    data-testid=&quot;durationInput&quot;
+                    id=&quot;duration&quot;
+                    placeholder=&quot;Enter duration in hours or minutes&quot;
+                    type=&quot;text&quot;
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div
+                  class=&quot;layout-row justify-content-end&quot;
+                &gt;
+                  &lt;button
+                    class=&quot;mx-0&quot;
+                    data-testid=&quot;addButton&quot;
+                    type=&quot;submit&quot;
+                  &gt;
+                    Add Movie
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;layout-column w-30&quot;
+        &gt;
+          &lt;section
+            class=&quot;layout-row justify-content-center mb-40&quot;
+          &gt;
+            &lt;input
+              class=&quot;w-75 py-2&quot;
+              data-testid=&quot;search&quot;
+              placeholder=&quot;Search for movie by name&quot;
+              type=&quot;text&quot;
+            /&gt;
+          &lt;/section&gt;
+          &lt;section&gt;
+            &lt;ul
+              class=&quot;styled w-100 pl-0&quot;
+              data-testid=&quot;moviesList&quot;
+            &gt;
+              &lt;li
+                class=&quot;flex slide-up-fade-in justify-content-between&quot;
+              &gt;
+                &lt;div
+                  class=&quot;layout-column w-40&quot;
+                &gt;
+                  &lt;h3
+                    class=&quot;my-3&quot;
+                  /&gt;
+                  &lt;p
+                    class=&quot;my-0&quot;
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div
+                  class=&quot;layout-row my-auto mr-20&quot;
+                &gt;
+                  &lt;p
+                    class=&quot;justify-content-end&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/section&gt;
+          &lt;div
+            data-testid=&quot;noResult&quot;
+          &gt;
+            &lt;h3
+              class=&quot;text-center&quot;
+            &gt;
+              No Results Found
+            &lt;/h3&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+    at getByTestId (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:104:16)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Favorite Movie Directory should hide alert message after user starts typing in some input" name="Favorite Movie Directory should hide alert message after user starts typing in some input" time="0.014">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;alert&quot;]
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;h8k-navbar
+        header=&quot;Favorite Movie Directory&quot;
+      /&gt;
+      &lt;div
+        class=&quot;layout-row justify-content-center mt-100&quot;
+      &gt;
+        &lt;div
+          class=&quot;w-30 mr-75&quot;
+        &gt;
+          &lt;section&gt;
+            &lt;div
+              class=&quot;card pa-30&quot;
+            &gt;
+              &lt;form&gt;
+                &lt;div
+                  class=&quot;layout-column mb-15&quot;
+                &gt;
+                  &lt;label
+                    class=&quot;mb-3&quot;
+                    for=&quot;name&quot;
+                  &gt;
+                    Movie Name
+                  &lt;/label&gt;
+                  &lt;input
+                    data-testid=&quot;nameInput&quot;
+                    id=&quot;name&quot;
+                    placeholder=&quot;Enter Movie Name&quot;
+                    type=&quot;text&quot;
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div
+                  class=&quot;layout-column mb-15&quot;
+                &gt;
+                  &lt;label
+                    class=&quot;mb-3&quot;
+                    for=&quot;ratings&quot;
+                  &gt;
+                    Ratings
+                  &lt;/label&gt;
+                  &lt;input
+                    data-testid=&quot;ratingsInput&quot;
+                    id=&quot;ratings&quot;
+                    placeholder=&quot;Enter Rating on a scale of 1 to 100&quot;
+                    type=&quot;number&quot;
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div
+                  class=&quot;layout-column mb-30&quot;
+                &gt;
+                  &lt;label
+                    class=&quot;mb-3&quot;
+                    for=&quot;duration&quot;
+                  &gt;
+                    Duration
+                  &lt;/label&gt;
+                  &lt;input
+                    data-testid=&quot;durationInput&quot;
+                    id=&quot;duration&quot;
+                    placeholder=&quot;Enter duration in hours or minutes&quot;
+                    type=&quot;text&quot;
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div
+                  class=&quot;layout-row justify-content-end&quot;
+                &gt;
+                  &lt;button
+                    class=&quot;mx-0&quot;
+                    data-testid=&quot;addButton&quot;
+                    type=&quot;submit&quot;
+                  &gt;
+                    Add Movie
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;layout-column w-30&quot;
+        &gt;
+          &lt;section
+            class=&quot;layout-row justify-content-center mb-40&quot;
+          &gt;
+            &lt;input
+              class=&quot;w-75 py-2&quot;
+              data-testid=&quot;search&quot;
+              placeholder=&quot;Search for movie by name&quot;
+              type=&quot;text&quot;
+            /&gt;
+          &lt;/section&gt;
+          &lt;section&gt;
+            &lt;ul
+              class=&quot;styled w-100 pl-0&quot;
+              data-testid=&quot;moviesList&quot;
+            &gt;
+              &lt;li
+                class=&quot;flex slide-up-fade-in justify-content-between&quot;
+              &gt;
+                &lt;div
+                  class=&quot;layout-column w-40&quot;
+                &gt;
+                  &lt;h3
+                    class=&quot;my-3&quot;
+                  /&gt;
+                  &lt;p
+                    class=&quot;my-0&quot;
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div
+                  class=&quot;layout-row my-auto mr-20&quot;
+                &gt;
+                  &lt;p
+                    class=&quot;justify-content-end&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/section&gt;
+          &lt;div
+            data-testid=&quot;noResult&quot;
+          &gt;
+            &lt;h3
+              class=&quot;text-center&quot;
+            &gt;
+              No Results Found
+            &lt;/h3&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+    at getByTestId (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:110:16)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Favorite Movie Directory should add multiple rows in sorted order" name="Favorite Movie Directory should add multiple rows in sorted order" time="0.018">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;textContent&apos;)
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:119:29)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Favorite Movie Directory should start search when at least 2 characters are entered" name="Favorite Movie Directory should start search when at least 2 characters are entered" time="0.019">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 5
+Received: 1
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:128:34)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Favorite Movie Directory should filter movies by starting characters" name="Favorite Movie Directory should filter movies by starting characters" time="0.018">
+      <failure>Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: &quot;North by Northwest&quot;
+Received string:    &quot;&quot;
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:138:42)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Favorite Movie Directory should show no result message and not show list when the search returns no match" name="Favorite Movie Directory should show no result message and not show list when the search returns no match" time="0.018">
+      <failure>Error: expect(received).toBeNull()
+
+Received: &lt;ul class=&quot;styled w-100 pl-0&quot; data-testid=&quot;moviesList&quot;&gt;&lt;li class=&quot;flex slide-up-fade-in justify-content-between&quot;&gt;&lt;div class=&quot;layout-column w-40&quot;&gt;&lt;h3 class=&quot;my-3&quot; /&gt;&lt;p class=&quot;my-0&quot; /&gt;&lt;/div&gt;&lt;div class=&quot;layout-row my-auto mr-20&quot;&gt;&lt;p class=&quot;justify-content-end&quot; /&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:149:23)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
