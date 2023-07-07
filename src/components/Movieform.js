@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { useState } from "react";
 import { MoviesContext } from "../App";
 
+//  The form to create a new form
 function Movieform() {
   const [error, setError] = useState(false);
   const {  setMoviesList } = useContext(MoviesContext);
