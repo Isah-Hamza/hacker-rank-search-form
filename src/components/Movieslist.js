@@ -5,7 +5,7 @@ import { MoviesContext } from "../App";
 function Movieslist() {
   const { searchedList } = useContext(MoviesContext);
 
-
+// Ths component shows the list of added movies by the users
   return (
     <section>
       <ul className="styled w-100 pl-0" data-testid="moviesList">
