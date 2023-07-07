@@ -5,7 +5,7 @@ import { MoviesContext } from "../App";
 
 function Movieform() {
   const [error, setError] = useState(false);
-  const { moviesList, setMoviesList } = useContext(MoviesContext);
+  const {  setMoviesList } = useContext(MoviesContext);
   const [newMovie, setNewMovie] = useState({
     name: "",
     rating: 0,
@@ -96,7 +96,6 @@ function Movieform() {
               }}
             />
           </div>
-          {/* Use this div when time format is invalid */}
           {error ? (
             <div className="alert error mb-30" data-testid="alert">
               Please specify time in hours or minutes (e.g. 2.5h or 150m)
